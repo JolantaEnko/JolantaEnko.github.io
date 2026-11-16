@@ -124,6 +124,20 @@ footer { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
   .year > .y { padding-top: 0; color: var(--accent); }
   .list li { grid-template-columns: 1fr; gap: 0; }
 }
+
+/* Student links bar */
+.students { display: flex; flex-direction: column; gap: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-top: -24px; }
+.srow { display: grid; grid-template-columns: 170px 1fr; gap: 12px; align-items: baseline; }
+.srow > * { min-width: 0; }
+.slbl { font-family: var(--f-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font-size: 0.9rem; font-weight: 500; color: var(--accent); text-decoration: none; border: 1px solid var(--accent); border-radius: 6px; padding: 5px 12px; line-height: 1.35; }
+.chip:hover { background: var(--accent-soft); }
+.chip.strong { background: var(--accent); color: var(--bg); }
+.chip.strong:hover { filter: brightness(1.08); background: var(--accent); }
+.chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.shint { margin: 0; font-size: 0.82rem; color: var(--muted); }
+@media (max-width: 560px) { .srow { grid-template-columns: 1fr; gap: 6px; } .students { margin-top: -16px; } }
 </style>
 
 </head>
@@ -137,9 +151,36 @@ footer { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
     </div>
   </header>
 
+  <nav class="students" aria-label="Dla studentów">
+    <div class="srow">
+      <span class="slbl">Materiały dydaktyczne</span>
+      <div class="chips">
+        <a class="chip" href="https://drive.google.com/drive/folders/1ukpJ7UegATe9miUEuIUJ7DWF5YrFeeyH?usp=sharing" target="_blank" rel="noopener">Magistranci</a>
+        <a class="chip" href="https://drive.google.com/drive/folders/1EL_n-jdVz3sq-S07tYTDSRkfjwKQrZMt?usp=sharing" target="_blank" rel="noopener">Psychometria</a>
+        <a class="chip" href="https://drive.google.com/drive/folders/1VHduzPbuKoVcISWpy_aScNim289gYDqK?usp=sharing" target="_blank" rel="noopener">Statystyka</a>
+        <a class="chip" href="https://drive.google.com/drive/folders/1l_gsdaTgYZrgxv-_dBRqn_JeJtKzqO2i?usp=sharing" target="_blank" rel="noopener">Psychologia społeczna (2020–2023)</a>
+      </div>
+    </div>
+    <div class="srow">
+      <span class="slbl">Konferencja</span>
+      <div class="chips">
+        <a class="chip strong" href="https://sites.google.com/swps.edu.pl/snspswps?usp=sharing" target="_blank" rel="noopener">Seminarium Naukowe Studentów Psychologii SWPS</a>
+      </div>
+    </div>
+    <p class="shint">Dostęp po zalogowaniu na konto SWPS.</p>
+  </nav>
+
   <section>
     <h2>Research</h2>
     <p>I study creativity and positive psychology using psychophysiology and psychometrics. My current National Science Centre project tests how social power and cardiovascular challenge and threat responses shape creative problem-solving. I also adapt and validate questionnaires, and I bring a psychophysiological and psychometric perspective to collaborative projects, from positive emotions to academic dishonesty and moral emotions.</p>
+  </section>
+
+  <section>
+    <h2>Grants</h2>
+    <ul class="list">
+      <li><span class="k">2022–2025</span><span>Influence of social power construing and associated cardiovascular reactivity on creative problem-solving<span class="sub">National Science Centre, Poland · 2021/43/D/HS6/01048</span></span></li>
+      <li><span class="k">2015–2018</span><span>Examining a motivational model for gratitude interventions: physiological responses underlying gratitude experience and action<span class="sub">National Science Centre, Poland · 2014-15/N/HS6/04151</span></span></li>
+    </ul>
   </section>
 
   <section>
@@ -289,14 +330,6 @@ footer { font-family: var(--f-mono); font-size: 12px; color: var(--muted); }
         </article>
       </div></div>
     </div>
-  </section>
-
-  <section>
-    <h2>Grants</h2>
-    <ul class="list">
-      <li><span class="k">2022–2025</span><span>Influence of social power construing and associated cardiovascular reactivity on creative problem-solving<span class="sub">National Science Centre, Poland · 2021/43/D/HS6/01048</span></span></li>
-      <li><span class="k">2015–2018</span><span>Examining a motivational model for gratitude interventions: physiological responses underlying gratitude experience and action<span class="sub">National Science Centre, Poland · 2014-15/N/HS6/04151</span></span></li>
-    </ul>
   </section>
 
   <section>
