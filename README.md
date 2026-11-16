@@ -4,7 +4,7 @@ Personal research website of Jolanta Enko (SWPS University, Poznań). Live at ht
 
 ## Files
 
-- `index.html`: the homepage, a single self-contained page with all styles inline. Sections in order: header, student links bar (Polish), Research, Grants, Papers (psychology, grouped by year, newest first), Earlier work (biology and commodity science), Background, Elsewhere.
+- `index.html`: the homepage, a single self-contained page with all styles inline. Sections in order: header, student links bar (Polish), ORCID and email row, Research, Grants, Papers (psychology, grouped by year, newest first), Earlier work (biology and commodity science), Background.
 - `nissel-enko-2026-relationship-satisfaction.html` + `.pdf`: a paper page with an accepted manuscript. Use it as the template for any future accepted-manuscript page.
 - `sitemap.xml`: list every page here and update `lastmod` when a page changes.
 - `robots.txt`: points search engines to the sitemap.
